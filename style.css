@@ -1,0 +1,118 @@
+:root{
+    /*max weidth of media devices*/
+    --mobile:373px;
+    --desktop:1440px;
+
+    /*colour*/
+    --text-blue:hsl(215, 51%, 70%);
+    --text-cyan: hsl(178, 100%, 50%);
+    --bg-body:hsl(217, 54%, 11%);
+    --bg-card:hsl(216, 50%, 16%);
+    --line:hsl(215, 32%, 27%);
+    --text-white:hsl(0, 0%, 100%);
+    
+    /* font size */
+    --f-size:18px;
+
+    --f-family:font-family: 'Outfit', sans-serif;
+}
+/* _________utility class___________ */
+.d-flex{
+    display: flex;
+}
+.h-center{
+justify-content: center;
+}
+.v-center{
+    align-items: center;
+}
+
+/* ________nft templet start_________ */
+*{
+    margin:2px;
+    padding:0px;
+    cursor:default;
+}
+*{
+    margin: 0px;
+    padding:0px ;
+}
+body{
+    flex-direction: column;
+    background: var(--bg-body);
+    height: 100vh; 
+    font-size: var(--f-size);  
+    color: var(--text-blue);
+}
+.attribution {
+    font-size: 15px; text-align: center; }
+.attribution a { color: hsl(0, 0%, 100%); }
+
+/*_____________card style______________*/
+.container{
+    margin: auto;
+    border-radius: 1.5rem;
+    width:373px;
+    background: var(--bg-card);
+    padding: 0.5rem;
+
+}
+    /*__________ container items___________ */
+section{
+    margin:1rem;
+}
+/* _____________equilibrium image________________ */
+.image img{
+    width:100%;
+    border-radius:0.5rem ;
+
+}
+.image div{
+   position: absolute;
+   
+    width: 340px;
+    height: 340px;
+    background: rgb(0, 255, 247,0.6);
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    opacity: 0;
+    border-radius:0.5rem ;
+    transition: 0.5s;
+}
+.image div:hover{
+    opacity:1;
+visibility: visible;
+    cursor: pointer;
+}
+section h1{
+    color: var(--text-white);
+}
+
+
+/* _______________list items_______________ */
+ul{
+    list-style-type:none;
+    justify-content: space-between;
+    border-bottom:2px solid var(--line);
+    padding-bottom: 1rem;
+}
+
+li:first-child{
+    color: var(--text-cyan);
+}
+.avatar img{
+    height:2rem;
+    border-radius: 100%;
+    border: 2px solid var(--text-white);
+    margin-right:1rem;
+}
+.avatar a{
+    color: var(--text-white);
+    text-decoration: none;
+}
+.avatar a:hover,h1:hover{
+    color: var(--text-cyan);
+    cursor: pointer;
+}
+
