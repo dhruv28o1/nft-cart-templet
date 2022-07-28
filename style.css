@@ -14,7 +14,7 @@
     /* font size */
     --f-size:18px;
 
-    --f-family:font-family: 'Outfit', sans-serif;
+    --f-family: 'Outfit', sans-serif;
 }
 /* _________utility class___________ */
 .d-flex{
@@ -43,6 +43,8 @@ body{
     height: 100vh; 
     font-size: var(--f-size);  
     color: var(--text-blue);
+    font-family: var(--f-family);
+    font-weight: 600;
 }
 .attribution {
     font-size: 15px; text-align: center; }
@@ -65,7 +67,7 @@ section{
 .image img{
     width:100%;
     border-radius:0.5rem ;
-
+    
 }
 .image div{
    position: absolute;
@@ -107,6 +109,9 @@ li:first-child{
     border: 2px solid var(--text-white);
     margin-right:1rem;
 }
+.avatar p{
+font-weight: 300;
+}
 .avatar a{
     color: var(--text-white);
     text-decoration: none;
@@ -114,5 +119,9 @@ li:first-child{
 .avatar a:hover,h1:hover{
     color: var(--text-cyan);
     cursor: pointer;
+}
+.para p{
+font-weight: 400;
+font-size: 20px;
 }
 
