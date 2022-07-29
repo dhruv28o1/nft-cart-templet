@@ -1,6 +1,6 @@
 :root{
     /*max weidth of media devices*/
-    --mobile:373px;
+    --mobile:350px;
     --desktop:1440px;
 
     /*colour*/
@@ -9,13 +9,117 @@
     --bg-body:hsl(217, 54%, 11%);
     --bg-card:hsl(216, 50%, 16%);
     --line:hsl(215, 32%, 27%);
-    --text-white:hsl(0, 0%, 100%);
+    --white:hsl(0, 0%, 100%);
     
     /* font size */
     --f-size:18px;
 
     --f-family: 'Outfit', sans-serif;
 }
+
+/* ________nft templet start_________ */
+*{
+    margin: 0px;
+    padding:0px ;
+    cursor:default;
+}
+
+body{
+    position:absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+body{
+    flex-direction: column;
+    background: var(--bg-body); 
+    color: var(--text-blue);
+
+    font-family: var(--f-family);
+    font-size: var(--f-size);
+    /* overflow: hidden; */
+}
+.attribution {
+    font-size: .5em; text-align: center; }
+.attribution a { color: hsl(0, 0%, 100%); }
+
+.container{
+background: var(--bg-card);
+max-width: var(--mobile);
+border-radius: 1em;
+}
+
+/* equilibrium image */
+.e-img{
+    width: 100%;
+    border-radius: 0.4em;
+}
+.e-hover{
+    position: absolute;
+    background: rgba(0, 255, 247,0.6);
+    border-radius: 0.5em;
+    height: 295px;
+    width: 295px;
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.e-hover:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* ___________paragraph____________ */
+.paragraph h2{
+    color: var(--white);
+    font-weight: 600;
+    padding:0px 0px 0.5em 0px;
+}
+h2:hover{
+    cursor: pointer;
+    color: var(--text-cyan);
+}
+.paragraph p{
+    font-weight: 400;
+}
+.pdlist{
+    padding-bottom: 1em;
+    border-bottom: 2px solid var(--line);
+}
+ul{
+    justify-content: space-between;
+}
+li{
+    font-weight: 300;
+}
+li:first-child{
+    color:var(--text-cyan)
+}
+
+/* _________avatar_________ */
+.avatar img{
+    height: 2em;
+    border-radius: 100%;
+    border: 2px solid var(--white);
+    margin-right: 0.5em;
+}
+.avatar p{
+    font-weight: 300;
+}
+.avatar p a{
+    text-decoration: none;
+    color: var(--white);
+}
+.avatar p a:hover{
+    cursor: pointer;
+    color:var(--text-cyan);
+}
+
+
 /* _________utility class___________ */
 .d-flex{
     display: flex;
@@ -26,102 +130,14 @@ justify-content: center;
 .v-center{
     align-items: center;
 }
-
-/* ________nft templet start_________ */
-*{
-    margin:2px;
-    padding:0px;
-    cursor:default;
+.card-section{
+    margin:0.5em;
 }
-*{
-    margin: 0px;
-    padding:0px ;
+.card{
+    margin:1em;
 }
-body{
-    flex-direction: column;
-    background: var(--bg-body);
-    height: 100vh; 
-    font-size: var(--f-size);  
-    color: var(--text-blue);
-    font-family: var(--f-family);
-    font-weight: 600;
+@media only screen and (max-width:373px){
+.e-hover{
+    display: none;
 }
-.attribution {
-    font-size: 15px; text-align: center; }
-.attribution a { color: hsl(0, 0%, 100%); }
-
-/*_____________card style______________*/
-.container{
-    margin: auto;
-    border-radius: 1.5rem;
-    width:373px;
-    background: var(--bg-card);
-    padding: 0.5rem;
-
 }
-    /*__________ container items___________ */
-section{
-    margin:1rem;
-}
-/* _____________equilibrium image________________ */
-.image img{
-    width:100%;
-    border-radius:0.5rem ;
-    
-}
-.image div{
-   position: absolute;
-   
-    width: 340px;
-    height: 340px;
-    background: rgb(0, 255, 247,0.6);
-    background-image: url(./images/icon-view.svg);
-    background-repeat: no-repeat;
-    background-position:center;
-    opacity: 0;
-    border-radius:0.5rem ;
-    transition: 0.5s;
-}
-.image div:hover{
-    opacity:1;
-visibility: visible;
-    cursor: pointer;
-}
-section h1{
-    color: var(--text-white);
-}
-
-
-/* _______________list items_______________ */
-ul{
-    list-style-type:none;
-    justify-content: space-between;
-    border-bottom:2px solid var(--line);
-    padding-bottom: 1rem;
-}
-
-li:first-child{
-    color: var(--text-cyan);
-}
-.avatar img{
-    height:2rem;
-    border-radius: 100%;
-    border: 2px solid var(--text-white);
-    margin-right:1rem;
-}
-.avatar p{
-font-weight: 300;
-}
-.avatar a{
-    color: var(--text-white);
-    text-decoration: none;
-}
-.avatar a:hover,h1:hover{
-    color: var(--text-cyan);
-    cursor: pointer;
-}
-.para p{
-font-weight: 400;
-font-size: 20px;
-}
-
