@@ -60,8 +60,8 @@ border-radius: 1em;
     position: absolute;
     background: rgba(0, 255, 247,0.6);
     border-radius: 0.5em;
-    height: 320px;
-    width: 320px;
+    height: 300px;
+    width: 300px;
     background-image: url(./images/icon-view.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -131,10 +131,10 @@ justify-content: center;
     align-items: center;
 }
 .card-section{
-    margin:0.5em;
+    margin:1em;
 }
 .card{
-    margin:1em;
+    margin:1.5em 1em;
 }
 @media only screen and (max-width:373px){
 .e-hover{
